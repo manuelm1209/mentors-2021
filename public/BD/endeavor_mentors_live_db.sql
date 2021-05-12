@@ -1,5 +1,6 @@
 -- phpMyAdmin SQL Dump
 -- version 5.0.2
+-- Manuel
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: mentors-db-instance.c9esrffqfktp.us-east-1.rds.amazonaws.com:3306
