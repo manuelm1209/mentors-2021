@@ -1,6 +1,5 @@
 -- phpMyAdmin SQL Dump
 -- version 5.0.2
--- Manuel
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: mentors-db-instance.c9esrffqfktp.us-east-1.rds.amazonaws.com:3306
@@ -28,7 +27,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `nps`
 --
 
-CREATE TABLE `nps` (
+CREATE TABLE IF NOT EXISTS `nps` (
   `email` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
   `score` tinyint(2) NOT NULL,
   `opinion` varchar(1000) CHARACTER SET utf8mb4 NOT NULL
@@ -103,7 +102,7 @@ INSERT INTO `nps` (`email`, `score`, `opinion`) VALUES
 -- Estructura de tabla para la tabla `records`
 --
 
-CREATE TABLE `records` (
+CREATE TABLE IF NOT EXISTS `records` (
   `email` varchar(50) NOT NULL,
   `first_session` tinyint(4) NOT NULL,
   `second_session` tinyint(4) NOT NULL,
@@ -301,7 +300,7 @@ INSERT INTO `records` (`email`, `first_session`, `second_session`, `third_sessio
 -- Estructura de tabla para la tabla `sessions`
 --
 
-CREATE TABLE `sessions` (
+CREATE TABLE IF NOT EXISTS `sessions` (
   `id` tinyint(3) NOT NULL,
   `area` varchar(30) NOT NULL,
   `name` varchar(140) NOT NULL,
@@ -346,7 +345,7 @@ INSERT INTO `sessions` (`id`, `area`, `name`, `link`, `password`) VALUES
 -- Estructura de tabla para la tabla `staff_meeting`
 --
 
-CREATE TABLE `staff_meeting` (
+CREATE TABLE IF NOT EXISTS `staff_meeting` (
   `email` varchar(50) NOT NULL,
   `id_session` tinyint NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -386,10 +385,28 @@ INSERT INTO `staff_meeting` (`email`, `id_session`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `mentors_meeting`
+--
+
+CREATE TABLE IF NOT EXISTS `mentors_meeting` (
+  `email` varchar(50) NOT NULL,
+  `session` tinyint NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `staff_meeting`
+--
+
+INSERT INTO `mentors_meeting` (`email`, `session`) VALUES
+('prueba.mentor@endeavor.org.co', 1),
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `Name` varchar(50) NOT NULL,
   `Last_name` varchar(50) NOT NULL,
   `id` int(13) NOT NULL,
@@ -619,7 +636,9 @@ INSERT INTO `users` (`Name`, `Last_name`, `id`, `Email`, `Tipo`) VALUES
 ('Viviana', 'Revelo', 830001810, 'vivianarevelo99@gmail.com', 3),
 ('Walter', 'Llanos', 1140869816, 'walterdll@hotmail.com', 3),
 ('William', 'Mc Cormick', 79379976, 'wamccb@gmail.com', 3),
-('Ana', 'Zuniga', 1129570205, 'zunigaanamaria@gmail.com', 3);
+('Ana', 'Zuniga', 1129570205, 'zunigaanamaria@gmail.com', 3),
+('Prueba', 'Mentor', 1129570123, 'prueba.mentor@endeavor.org.co', 4);
+
 
 -- --------------------------------------------------------
 
@@ -627,7 +646,7 @@ INSERT INTO `users` (`Name`, `Last_name`, `id`, `Email`, `Tipo`) VALUES
 -- Estructura de tabla para la tabla `user_type`
 --
 
-CREATE TABLE `user_type` (
+CREATE TABLE IF NOT EXISTS `user_type` (
   `Id` tinyint(4) NOT NULL,
   `Name` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

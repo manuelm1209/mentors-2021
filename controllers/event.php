@@ -13,7 +13,7 @@ class Event extends Controller{
         $this->main();
         $this->get_table_info();
         $this->get_sessions_users();
-//        $this->get_users_info_mentors();
+        $this->get_users_info_mentors();
 
         $this->view->render('view_event');
     }
@@ -46,10 +46,10 @@ class Event extends Controller{
 
         if($res === true){
             $msg = "¡Muchas gracias por tu respuesta!";
-    
+
             $this->view->msg = $msg;
             $this->render();
-        }        
+        }
     }
 
     function get_table_info(){
