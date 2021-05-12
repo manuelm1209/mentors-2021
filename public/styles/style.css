@@ -1,0 +1,293 @@
+* {
+    --light-teal: rgba(129, 208, 214, 1);
+    --light-red: rgba(255, 102, 102, 1);
+    --dark-theme: rgba(26, 26, 26, 1);
+}
+
+label{
+    margin-top: .5rem;
+}
+
+.container-home{
+    min-height: 100vh;
+    background: url(https://mentors-day-assets.s3-us-west-2.amazonaws.com/assets/images/bg-v2.png) center no-repeat rgba(14, 35, 64, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+
+.logo-home{
+    padding: 1rem;
+    width: 100%;
+}
+
+.welcome-title{
+    color: var(--light-teal);
+}
+
+.button-block{
+    width: 100%;
+    text-align: center;
+}
+
+.login-button{
+    background: var(--light-red); 
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    margin: auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.normal-p{
+    text-align: center;
+}
+
+.form-control{
+    margin: .5rem 0;
+}
+
+.form-control:focus{
+    border-color: var(--light-teal);
+    box-shadow: 0 0 0 0.1rem var(--light-teal); 
+}
+
+.promo-text{
+    color: var(--light-teal);
+    font-size: large;
+    font-weight: bold;
+}
+
+.icons-home{
+    max-width: 20rem;
+}
+
+.img-thumb-live{
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-event-section{
+    background: url(https://mentors-day-assets.s3-us-west-2.amazonaws.com/assets/images/MentorsBg.png) center no-repeat rgba(14, 35, 64, 1);
+    background-size: cover;
+    color: white;
+}
+
+.main-header{
+    padding: 1rem;
+}
+
+.logo-main-header{
+    width: 15rem;
+    margin: auto;
+}
+
+.instruction-number{
+    width: 100%;
+    max-width: 50px;
+    margin: auto;
+}
+
+.event-card{
+    text-align: center;
+    padding: 1rem;
+    background: rgba(100, 100, 100, .2);
+}
+
+.button-event{
+    background: var(--light-red);
+    color: var(--dark-theme);
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.button-event:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.area-event{
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--light-teal);
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.event-hour{
+    margin: 0;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.name-event{
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.log-out{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    color: white;
+}
+
+.log-out:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.featured-ally-img{
+    width: 100%;
+}
+
+.swiper-slide{
+    text-align: center;
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.swiper-container{
+    padding: 0 1rem !important;
+}
+
+.featured-allies{
+    padding: 3rem 0;
+    background: linear-gradient(.25turn, rgba(255, 102, 102, .4), rgba(129, 208, 214, .4));
+}
+
+.green{
+    color: var(--light-teal);
+}
+
+.featured-allies-row{
+    max-width: 100%;
+}
+
+.logo-footer{
+    max-width: 20rem;
+    margin: auto;
+}
+
+footer{
+    background: linear-gradient(.25turn, rgba(255, 255, 255, .3), rgba(14, 35, 68, .8));
+    padding: 2rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+.title-green{
+    border-bottom: 5px solid var(--light-teal);
+    padding-bottom: .5rem;
+}
+
+.title-red{
+    border-bottom: 5px solid var(--light-red);
+    padding-bottom: .5rem;
+}
+
+.social-media-list li{
+    display: inline;
+}
+
+.social-media-icon{
+    padding: 0 .5rem;
+}
+
+.social-media-icon img{
+    width: 2rem;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.red{
+    color: var(--light-red);
+}
+
+.qa-icon{
+    max-width: 2rem;
+    margin: 0 1rem;
+}
+
+.video-section-mentors{
+    width: 90%;
+    height: auto;
+}
+
+#clock-list{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#clock-list li{
+    height: 100%;
+    display: inline-block;
+    padding: 1rem .2rem;
+}
+
+.clock-card{
+    padding: 0rem;
+    background: rgba(100, 100, 100, .2);
+    margin: 0;
+}
+
+.clock-number{
+    font-size: 2rem;
+    padding: 1rem 1rem 0 1rem;
+    font-weight: bold;
+}
+
+.label-clock{
+    opacity: .1;
+    font-size: initial;
+    line-height: initial;
+}
+
+.form-check-label{
+    margin: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.table{
+    background: rgba(0, 0, 0, .8);
+    font-size: small;
+    padding: 1rem 0;
+}
+
+.networking-block--link{
+    background: white;
+    padding: 0.5rem 1rem;
+    color: #0e2340;
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.networking-block--link:hover{
+    color: #81d0d6;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.user-info-card{
+    padding: 1rem;
+    background: rgba(100, 100, 100, .2);
+}
