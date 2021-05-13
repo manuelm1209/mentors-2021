@@ -6,7 +6,7 @@ include_once 'models/attendees.php';
 
 class eventModel extends Model {
     public function __construct(){
-        parent::__construct();       
+        parent::__construct();
     }
 
     public function getUser($data){
@@ -24,7 +24,7 @@ class eventModel extends Model {
     public function getSessions($data){
         switch($data[0]->type){
             case 1:
-                $sessions = $this->getAllSessions();                   
+                $sessions = $this->getAllSessions();
                 break;
             case 2:
                 $sessions = $this->getStaffSession($data);
@@ -44,7 +44,7 @@ class eventModel extends Model {
         $sessions = [];
         $query = $this->db->connect()->prepare('SELECT * FROM sessions');
 
-        try{            
+        try{
             $query->execute();
 
             while($row = $query->fetch()){
@@ -55,7 +55,7 @@ class eventModel extends Model {
                 $session->name     = $row['name'];
                 $session->link     = $row['link'];
                 $session->password = $row['password'];
-                
+
                 array_push($sessions, $session);
             }
 
@@ -90,7 +90,7 @@ class eventModel extends Model {
                 $session->name     = $row['name'];
                 $session->link     = $row['link'];
                 $session->password = $row['password'];
-                
+
                 array_push($sessions, $session);
             }
 
@@ -115,7 +115,7 @@ class eventModel extends Model {
                 $session->name     = $row['name'];
                 $session->link     = $row['link'];
                 $session->password = $row['password'];
-                
+
                 array_push($sessions, $session);
             }
 
@@ -140,7 +140,7 @@ class eventModel extends Model {
                 $session->name     = $row['name'];
                 $session->link     = $row['link'];
                 $session->password = $row['password'];
-                
+
                 array_push($sessions, $session);
             }
 
@@ -165,7 +165,7 @@ class eventModel extends Model {
                 $session->name     = $row['name'];
                 $session->link     = $row['link'];
                 $session->password = $row['password'];
-                
+
                 array_push($sessions, $session);
             }
 
@@ -225,7 +225,7 @@ class eventModel extends Model {
                     $item->email     = $row_2['Email'];
                     $item->name      = $row_2['Name'];
                     $item->last_name = $row_2['Last_name'];
-                    
+
                     array_push($results, $item);
                 }
             }
@@ -252,18 +252,45 @@ class eventModel extends Model {
                 break;
         }
 
-        $second_query = $this->db->connect()->prepare('SELECT 
-            users.Name, 
-            users.Last_name,
-            users.company,
-            users.position,
-            users.website,
-            users.billing,
-            users.description,
-            users.q_first,
-            users.q_second,
-            users.q_third
-            FROM users WHERE users.Email = :email_2');
+        $second_query = $this->db->connect()->prepare('SELECT users.Name, users.Last_name FROM users WHERE users.Email = :email_2');
+
+        try{
+            $query->execute([':email' => $email[0]->email]);
+
+            while($row = $query->fetch()){
+                $email_data = $row['email'];
+                $second_query->execute([':email_2' => $email_data]);
+
+                while($row_2 = $second_query->fetch()){
+                  $item = array(
+                      "name"          => $row_2['Name'],
+                      "last_name"     => $row_2['Last_name'],
+
+                  );
+                                      
+                    array_push($results, $item);
+                }
+            }
+
+
+
+/*
+    public function get_users_mentor_session($num = 0, $email){
+        $results = array();
+
+        switch($num){
+            case 1:
+                $query = $this->db->connect()->prepare('SELECT records.email FROM records WHERE records.first_session = (SELECT mentors_meeting.session FROM mentors_meeting WHERE mentors_meeting.email = :email)');
+                break;
+            case 2:
+                $query = $this->db->connect()->prepare('SELECT records.email FROM records WHERE records.second_session = (SELECT mentors_meeting.session FROM mentors_meeting WHERE mentors_meeting.email = :email)');
+                break;
+            case 3:
+                $query = $this->db->connect()->prepare('SELECT records.email FROM records WHERE records.third_session = (SELECT mentors_meeting.session FROM mentors_meeting WHERE mentors_meeting.email = :email)');
+                break;
+        }
+
+        $second_query = $this->db->connect()->prepare('SELECT users.Name, users.Last_name, users.company, users.position, users.website, users.billing, users.description, users.q_first, users.q_second, users.q_third FROM users WHERE users.Email = :email_2');
 
         try{
             $query->execute([':email' => $email[0]->email]);
@@ -285,10 +312,11 @@ class eventModel extends Model {
                         "q_second"      => $row_2['q_second'],
                         "q_third"       => $row_2['q_third'],
                     );
-                    
+
                     array_push($results, $item);
                 }
             }
+*/
 
             return $results;
 
