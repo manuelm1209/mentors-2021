@@ -398,7 +398,7 @@ CREATE TABLE IF NOT EXISTS `mentors_meeting` (
 --
 
 INSERT INTO `mentors_meeting` (`email`, `session`) VALUES
-('prueba.mentor@endeavor.org.co', 1),
+('prueba.mentor@endeavor.org.co', 1);
 
 -- --------------------------------------------------------
 
