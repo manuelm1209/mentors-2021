@@ -77,6 +77,9 @@ class eventModel extends Model {
             case 3:
                 $query = $this->db->connect()->prepare('SELECT sessions.id, sessions.name, sessions.area, sessions.link, sessions.password from sessions WHERE sessions.id = (SELECT third_session FROM records WHERE email = :email)');
                 break;
+            case 4:
+                $query = $this->db->connect()->prepare('SELECT sessions.id, sessions.name, sessions.area, sessions.link, sessions.password from sessions WHERE sessions.id = (SELECT fourth_session FROM records WHERE email = :email)');
+                break;
         }
 
         try{
@@ -102,7 +105,7 @@ class eventModel extends Model {
 
     public function getAttendeeSession($user){
         $sessions = [];
-        $query = $this->db->connect()->prepare('SELECT sessions.id, sessions.name, sessions.area, sessions.link, sessions.password from records INNER JOIN sessions on records.email=:email AND (sessions.id=records.first_session OR sessions.id=records.second_session OR sessions.id=records.third_session)');
+        $query = $this->db->connect()->prepare('SELECT sessions.id, sessions.name, sessions.area, sessions.link, sessions.password from records INNER JOIN sessions on records.email=:email AND (sessions.id=records.first_session OR sessions.id=records.second_session OR sessions.id=records.third_session OR sessions.id=records.fourth_session)');
 
         try{
             $query->execute([':email' => $user[0]->email]);
