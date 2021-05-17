@@ -33,7 +33,7 @@ class Users extends Controller
         $remote_server_output = json_decode($remote_server_output);
 
         $defaults_2 = array(
-            CURLOPT_URL => 'https://connect.eventtia.com/api/v3/events/mentorsdaylive2sept/attendees?page[number]=1',
+            CURLOPT_URL => 'https://connect.eventtia.com/api/v3/events/mentorsday2021/attendees?page[number]=1',
             CURLOPT_HTTPHEADER => ['Authorization: Bearer ' . $remote_server_output->auth_token],
             CURLOPT_RETURNTRANSFER => 1
         );
@@ -54,21 +54,23 @@ class Users extends Controller
                 $attendee_meta = (array) $attendee->attributes->fields;
 
                 $attendee_data = array(
-                    "name"              => $attendee_meta[696348],
-                    "last_name"         => $attendee_meta[696349],
-                    "email"             => $attendee_meta[696352],
-                    "id"                => $attendee_meta[696350],
-                    "company"           => $attendee_meta[696355],
-                    "position"          => $attendee_meta[696356],
-                    "website"           => $attendee_meta[696376],
-                    "billing"           => $attendee_meta[696377],
-                    "comp_description"  => $attendee_meta[696375],
-                    "q_first"           => $attendee_meta[696418],
-                    "q_second"          => $attendee_meta[696430],
-                    "q_third"           => $attendee_meta[696431],
-                    "first_session"     => $attendee_meta[696404],
-                    "second_session"    => $attendee_meta[696405],
-                    "third_session"     => $attendee_meta[696406]
+                    "name"              => $attendee_meta[922087],
+                    "last_name"         => $attendee_meta[922088],
+                    "email"             => $attendee_meta[922090],
+                    "id"                => $attendee_meta[922107],
+                    "company"           => $attendee_meta[922092],
+                    "position"          => $attendee_meta[922096],
+                    "website"           => $attendee_meta[922093],
+                    "billing"           => $attendee_meta[922095],
+                    "comp_description"  => $attendee_meta[922094],
+                    "q_first"           => $attendee_meta[922100],
+                    "q_second"          => $attendee_meta[922102],
+                    "q_third"           => $attendee_meta[],
+                    "q_fourth"           => $attendee_meta[],
+                    "first_session"     => $attendee_meta[922099],
+                    "second_session"    => $attendee_meta[922101],
+                    "third_session"     => $attendee_meta[],
+                    "fourth_session"    => $attendee_meta[]
                 );
 
                 array_push($attendees, $attendee_data);
@@ -76,7 +78,7 @@ class Users extends Controller
         }
 
         for ($i = 0; $i < ($pages - 1); $i++) {
-            $url = 'https://connect.eventtia.com/api/v3/events/mentorsdaylive2sept/attendees?page[number]=' . ($i + 2);
+            $url = 'https://connect.eventtia.com/api/v3/events/mentorsday2021/attendees?page[number]=' . ($i + 2);
 
             $defaults_2 = array(
                 CURLOPT_URL => $url,
@@ -111,7 +113,8 @@ class Users extends Controller
                         "q_third"           => $attendee_meta[696431],
                         "first_session"     => $attendee_meta[696404],
                         "second_session"    => $attendee_meta[696405],
-                        "third_session"     => $attendee_meta[696406]
+                        "third_session"     => $attendee_meta[696406],
+                        "fourth_session"    => $attendee_meta[696405]
                     );
 
                     array_push($attendees, $attendee_data);

@@ -345,7 +345,6 @@
             </div>
             <div class="col-12">
 		<img src="https://www.endeavor.org.co/wp-content/uploads/2021/04/Bannerblanco-AliadosMentors-cambio.png" alt="">
-		<!-- <img src="https://endeavor.org.co/wp-content/uploads/2020/08/Kit_Banner-White.png" alt=""> -->
             </div>
         </div>
     </div>

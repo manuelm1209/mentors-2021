@@ -106,14 +106,16 @@ CREATE TABLE IF NOT EXISTS `records` (
   `email` varchar(50) NOT NULL,
   `first_session` tinyint(4) NOT NULL,
   `second_session` tinyint(4) NOT NULL,
-  `third_session` tinyint(4) NOT NULL
+  `third_session` tinyint(4) NOT NULL,
+  `fourth_session` tinyint(4) NOT NULL,
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `records`
 --
 
-INSERT INTO `records` (`email`, `first_session`, `second_session`, `third_session`) VALUES
+INSERT INTO `records` (`email`, `first_session`, `second_session`, `third_session`, `fourth_session`) VALUES
 ('administracion@protesisadv.com', 12, 20, 4),
 ('administrador@gtcingenieria.com', 11, 19, 8),
 ('administrativa@ubuntec.net', 4, 15, 20),
@@ -313,9 +315,9 @@ CREATE TABLE IF NOT EXISTS `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `area`, `name`, `link`, `password`) VALUES
-(1, 'Capital', '¿Qué tipo de inversión necesito de acuerdo a la etapa de crecimiento de mi empresa?', 'https://endeavor-co.webex.com/endeavor-co/onstage/g.php?MTID=e013d3e6faa6b1bac8845762a1a4e45f7', 'NPmks6VqC42'),
-(2, 'Capital', 'Panorama de inversión en LATAM.', 'https://endeavor-co.webex.com/endeavor-co/onstage/g.php?MTID=ed45293ed1fc5a99a9c73d9daf716469a', '8MRmedymp54'),
-(3, 'Capital', '¿Cómo prepararme para buscar capital y cómo estimar el monto?', 'https://endeavor-co.webex.com/endeavor-co/onstage/g.php?MTID=e0f6dc3d05d72d9e6b8a47db283321cae', 'mAkmSX6Fp35'),
+(1, 'Estrategia', '¿Cómo monetizar mi data?', 'https://endeavor-co.webex.com/endeavor-co/onstage/g.php?MTID=e013d3e6faa6b1bac8845762a1a4e45f7', 'NPmks6VqC42'),
+(2, 'Estrategia', '¿Cómo crear una empresa con triple impacto?', 'https://endeavor-co.webex.com/endeavor-co/onstage/g.php?MTID=ed45293ed1fc5a99a9c73d9daf716469a', '8MRmedymp54'),
+(3, 'Estrategia', '¿Cómo identificar a qué ciudades expandirme?', 'https://endeavor-co.webex.com/endeavor-co/onstage/g.php?MTID=e0f6dc3d05d72d9e6b8a47db283321cae', 'mAkmSX6Fp35'),
 (4, 'Finanzas', '¿Cómo hacer una correcta planeación financiera para optimizar mis recursos?', 'https://endeavor-co.webex.com/endeavor-co/onstage/g.php?MTID=e8874ebe0114d587f3bc6422c7ff6a626', 'xAG6pZxVR54'),
 (5, 'Finanzas', '¿Cómo hacer una correcta planeación financiera para optimizar mis recursos? Sala 2.', 'https://endeavor-co.webex.com/endeavor-co/onstage/g.php?MTID=e39fde9b26441a70c4da52e406ceb00a9', 'k7Cdn2nFEY7'),
 (6, 'Marketing  y comunicaciones', 'Herramientas de Marketing Digital para impulsar mi compañía.', 'https://endeavor-co.webex.com/endeavor-co/onstage/g.php?MTID=e3db7695142e58efe8c879ee275733659', '4RMiPJgUv73'),
@@ -411,7 +413,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   `Last_name` varchar(50) NOT NULL,
   `id` int(13) NOT NULL,
   `Email` varchar(50) NOT NULL,
-  `Tipo` tinyint(20) NOT NULL
+  `Tipo` tinyint(20) NOT NULL,
+  `company`varchar(50) NOT NULL,
+  `position` varchar(50) NOT NULL,
+  `website` varchar(50) NOT NULL,
+  `billing` varchar(100) NOT NULL,
+  `description` varchar(500) NOT NULL,
+  `q_first` varchar(500) NOT NULL,
+  `q_second` varchar(500) NOT NULL,
+  `q_third` varchar(500) NOT NULL,
+  `q_fourth` varchar(500) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
