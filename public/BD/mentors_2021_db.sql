@@ -178,7 +178,7 @@ INSERT INTO `sessions` (`id`, `area`, `name`, `link`, `password`) VALUES
 (22, 'Ventas', '¿Cómo crecer mis ventas en tiempos de incertidumbre?', 'https://link22', 'pass22'),
 (23, 'Ventas', 'Compensación a mi fuerza comercial', 'https://link23', 'pass23'),
 (24, 'Talento', '¿Cómo construir la cultura de mi empresa durante el trabajo remoto?', 'https://link24', 'pass24'),
-(25, 'Talento', '¿Cómo crear un equipo de alto desempeño?', '25', 'pass25');
+(25, 'Talento', '¿Cómo crear un equipo de alto desempeño?', 'https://link25', 'pass25');
 -- --------------------------------------------------------
 
 --
@@ -196,17 +196,7 @@ CREATE TABLE IF NOT EXISTS `staff_meeting` (
 
 INSERT INTO `staff_meeting` (`email`, `id_session`) VALUES
 ('mary.nunez@endeavor.org.co', 1),
-('silvia.florez@endeavor.org.co', 2),
-('daniel.bayram@endeavor.org.co', 3),
-('carlos.crismatt@endeavor.org.co', 4),
-('mariana.pineres@endeavor.org.co', 5),
-('sebastian.lozano@endeavor.org.co', 6),
-('ana.rocha@endeavor.org.co', 7),
-('alejandro.rojas@endeavor.org.co', 8),
-('jimena.lopez@endeavor.org.co', 9),
-('pasanteseleccion@endeavor.org.co', 10),
-('maria.uribe@endeavor.org.co', 11),
-('pasantemedellin@endeavor.org.co', 12);
+('silvia.florez@endeavor.org.co', 2);
 
 
 -- --------------------------------------------------------
@@ -258,6 +248,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 
 INSERT INTO `users` (`Name`, `Last_name`, `id`, `Email`, `Tipo`, `company`, `position`, `website`, `billing`, `description`, `q_first`, `q_second`, `q_third`, `q_fourth`) VALUES
+('Prueba', 'Mentor', '', 'prueba.mentor@endeavor.org.co', 4, '', '', '', '', '', '', '', '', ''),
+('Mary', 'Nuñez', '', 'mary.nunez@endeavor.org.co', 2, '', '', '', '', '', '', '', '', ''),
+('Silvia', 'Florez', '', 'silvia.florez@endeavor.org.co', 2, '', '', '', '', '', '', '', '', ''),
 ('maria fernanda', 'restrepo montoya', '900932231', 'suministrosardila@gmail.com', 3, 'suministrosardila@gmail.com', 'gerente administrativa y financiera', 'no tenemos actualmente', 'Más de 500 millones', 'somos distribuidores mayoristas ferreteros', 'que pasos debo seguir, debo tercerizar o contratar directamente', 'que pasos debo seguir', 'null', 'null'),
 ('Milene', 'Jauregui', '63539547', 'milene.jauregui@social-mente.org', 3, 'SocialMente', 'Cofundora', 'www.social-mente.org', 'Todavía no facturo', 'Plataforma de conocimiento colaborativo, empresas comparten conocimiento alineado a necesidades de negocio y contratac, jóvenes se certifican y hacen parte de nube de talentos para el mercado laboral.', '1. Cómo llegar a los cargos más importantes de empresas grandes a través de digital?', 'Cómo generar un plan realmente alcanzable? qué tan ambicioso? Cómo medir?', 'null', 'null'),
 ('Juan', 'Diaz', '900557218', 'juan@koggi.co', 3, 'Koggi', 'CEO', 'Koggi.co', 'Hasta 70 millones', 'Somos una plataforma con inteligencia artificial que permite facilitar el acceso  a la vivienda simplificando la busqueda, solicitud y aprobación de creditos hipotecarios. ', 'Como acceder a una red de inversionistas en estos momentos?', 'Como son los tipos de levantamiento de capital para una startup?', 'Cómo determinar el cap value de mi compañía?', 'Finanzas & Fundraising: ¿Cómo conocer el valor de mi compañía?'),

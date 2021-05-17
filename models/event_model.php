@@ -208,6 +208,9 @@ class eventModel extends Model {
             case 3:
                 $query = $this->db->connect()->prepare('SELECT records.email FROM records WHERE records.third_session = (SELECT staff_meeting.id_session FROM staff_meeting WHERE staff_meeting.email = :email)');
                 break;
+            case 4:
+                $query = $this->db->connect()->prepare('SELECT records.email FROM records WHERE records.fourth_session = (SELECT staff_meeting.id_session FROM staff_meeting WHERE staff_meeting.email = :email)');
+                break;
         }
 
         $second_query = $this->db->connect()->prepare('SELECT users.Email, users.Name, users.Last_name FROM users WHERE users.Email = :email_2');
@@ -267,7 +270,7 @@ class eventModel extends Model {
                       "last_name"     => $row_2['Last_name'],
 
                   );
-                                      
+
                     array_push($results, $item);
                 }
             }
