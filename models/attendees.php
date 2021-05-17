@@ -8,5 +8,5 @@ class Attendee{
     public $first_session;
     public $second_session;
     public $third_session;
+    public $fourth_session;
 }
-
