@@ -87,6 +87,6 @@ class Event extends Controller{
         $this->view->first_user_session = $first_session;
         $this->view->second_user_session = $second_session;
         $this->view->third_user_session = $third_session;
-        $this->view->fourth_user_session = $third_session;
+        $this->view->fourth_user_session = $fourth_session;
     }
 }
