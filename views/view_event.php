@@ -81,6 +81,9 @@
                                     case 2:
                                         echo '<p class="event-hour">Sesión 3:<br>10:40 A.M. - 11:40 P.M.</p>';
                                         break;
+                                    case 3:
+                                        echo '<p class="event-hour">Sesión 4:<br>10:40 A.M. - 11:40 P.M.</p>';
+                                        break;
                                 }
                             } ?>
                             <p class="area-event"><?php echo $session->area; ?></p>
@@ -143,7 +146,7 @@
             <div class="row justify-content-center pt-5 pb-4">
                 <div class="col">
                     <h2 class="title-red">ASISTENTES REGISTRADOS</h2>
-                    <p class="pt-3">Estos son los asistentes registrados a cada una de las 3 sesiones.</p>
+                    <p class="pt-3">Estos son los asistentes registrados a cada una de las 4 sesiones.</p>
                 </div>
             </div>
             <div class="row">
@@ -210,6 +213,27 @@
                         } ?>
                     </table>
                 </div>
+                <div class="col-4">
+                    <h5 class="text-center">Sesión 4</h5>
+                    <table class="table table-sm table-dark text-center table-responsive">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                        <?php $i = 1;
+                        foreach ($this->fourth_session as $session) { ?>
+                            <tr>
+                                <td><?php echo $i; ?></td>
+                                <td><?php echo $session->name; ?></td>
+                                <td><?php echo $session->last_name; ?></td>
+                                <td><?php echo $session->email; ?></td>
+                            </tr>
+                        <?php $i++;
+                        } ?>
+                    </table>
+                </div>
             </div>
         <?php } ?>
         <?php if ($this->user[0]->type === 4) { ?>
@@ -257,6 +281,23 @@
                         <h4 class="text-center">SESIÓN 3</h4>
                     </div>
                     <?php foreach ($this->third_session_mentor as $key => $val) { ?>
+                        <div class="col-lg-4 col-md-6 pb-3 h-100">
+                            <div class="user-info-card">
+                                <p class="text-center" style="color: #81d0d6;"><b>ASISTENTE <?php echo $key + 1 ?></b></p>
+                                <p>Nombre: <?php echo $val['name'] . " " . $val["last_name"]?></p>
+                                <p>Empresa: <?php echo $val['company'] ?></p>
+                                <p>Cargo: <?php echo $val['position'] ?></p>
+                                <p>Facturación: <?php echo $val['billing'] ?></p>
+                                <p>Website: <a href="<?php echo $val['website'] ?>" target="_blank"><?php echo $val['website'] ?></a></p>
+                                <p>Descripción de la empresa: <?php echo $val['description'] ?></p>
+                                <p>Preguntas: <?php echo $val['q_third'] ?></p>
+                            </div>
+                        </div>
+                    <?php } ?>
+                    <div class="col-12" id="first-session-mentor">
+                        <h4 class="text-center">SESIÓN 4</h4>
+                    </div>
+                    <?php foreach ($this->fourth_session_mentor as $key => $val) { ?>
                         <div class="col-lg-4 col-md-6 pb-3 h-100">
                             <div class="user-info-card">
                                 <p class="text-center" style="color: #81d0d6;"><b>ASISTENTE <?php echo $key + 1 ?></b></p>

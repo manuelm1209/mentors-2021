@@ -256,6 +256,9 @@ class eventModel extends Model {
             case 3:
                 $query = $this->db->connect()->prepare('SELECT records.email FROM records WHERE records.third_session = (SELECT mentors_meeting.session FROM mentors_meeting WHERE mentors_meeting.email = :email)');
                 break;
+            case 4:
+                $query = $this->db->connect()->prepare('SELECT records.email FROM records WHERE records.fourth_session = (SELECT mentors_meeting.session FROM mentors_meeting WHERE mentors_meeting.email = :email)');
+                break;
         }
 
         $second_query = $this->db->connect()->prepare('SELECT users.Name, users.Last_name FROM users WHERE users.Email = :email_2');

@@ -58,10 +58,12 @@ class Event extends Controller{
         $first_session = $this->model->get_users_session(1, $user);
         $second_session = $this->model->get_users_session(2, $user);
         $third_session = $this->model->get_users_session(3, $user);
+        $fourth_session = $this->model->get_users_session(4, $user);
 
         $this->view->first_session = $first_session;
         $this->view->second_session = $second_session;
         $this->view->third_session = $third_session;
+        $this->view->fourth_session = $fourth_session;
     }
 
     function get_users_info_mentors(){
@@ -70,10 +72,12 @@ class Event extends Controller{
         $first_session = $this->model->get_users_mentor_session(1, $user);
         $second_session = $this->model->get_users_mentor_session(2, $user);
         $third_session = $this->model->get_users_mentor_session(3, $user);
+        $fourth_session = $this->model->get_users_mentor_session(4, $user);
 
         $this->view->first_session_mentor = $first_session;
         $this->view->second_session_mentor = $second_session;
         $this->view->third_session_mentor = $third_session;
+        $this->view->fourth_session_mentor = $fourth_session;
     }
 
     function get_sessions_users(){
