@@ -307,7 +307,7 @@
                                 <p>Facturación: <?php echo $val['billing'] ?></p>
                                 <p>Website: <a href="<?php echo $val['website'] ?>" target="_blank"><?php echo $val['website'] ?></a></p>
                                 <p>Descripción de la empresa: <?php echo $val['description'] ?></p>
-                                <p>Preguntas: <?php echo $val['q_third'] ?></p>
+                                <p>Preguntas: <?php echo $val['q_fourth'] ?></p>
                             </div>
                         </div>
                     <?php } ?>

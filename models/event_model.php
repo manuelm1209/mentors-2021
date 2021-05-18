@@ -243,6 +243,8 @@ class eventModel extends Model {
         }
     }
 
+/*
+
     public function get_users_mentor_session($num = 0, $email){
         $results = array();
 
@@ -280,10 +282,10 @@ class eventModel extends Model {
                     array_push($results, $item);
                 }
             }
+*/
 
 
 
-/*
     public function get_users_mentor_session($num = 0, $email){
         $results = array();
 
@@ -297,9 +299,12 @@ class eventModel extends Model {
             case 3:
                 $query = $this->db->connect()->prepare('SELECT records.email FROM records WHERE records.third_session = (SELECT mentors_meeting.session FROM mentors_meeting WHERE mentors_meeting.email = :email)');
                 break;
+            case 4:
+                $query = $this->db->connect()->prepare('SELECT records.email FROM records WHERE records.fourth_session = (SELECT mentors_meeting.session FROM mentors_meeting WHERE mentors_meeting.email = :email)');
+                break;
         }
 
-        $second_query = $this->db->connect()->prepare('SELECT users.Name, users.Last_name, users.company, users.position, users.website, users.billing, users.description, users.q_first, users.q_second, users.q_third FROM users WHERE users.Email = :email_2');
+        $second_query = $this->db->connect()->prepare('SELECT users.Name, users.Last_name, users.company, users.position, users.website, users.billing, users.description, users.q_first, users.q_second, users.q_third, users.q_fourth FROM users WHERE users.Email = :email_2');
 
         try{
             $query->execute([':email' => $email[0]->email]);
@@ -320,12 +325,13 @@ class eventModel extends Model {
                         "q_first"       => $row_2['q_first'],
                         "q_second"      => $row_2['q_second'],
                         "q_third"       => $row_2['q_third'],
+                        "q_fourth"      => $row_2['q_fourth'],
                     );
 
                     array_push($results, $item);
                 }
             }
-*/
+
 
             return $results;
 
