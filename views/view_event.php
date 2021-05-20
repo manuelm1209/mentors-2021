@@ -97,7 +97,7 @@
             } ?>
             <?php if ($this->user[0]->type === 3) {
                 for ($i = 0; $i < 4; $i++) { ?>
-                    <div class="col-md-4 col-sm-6 pt-1 pb-1">
+                    <div class="col-md-6 col-sm-6 pt-1 pb-1">
                         <div class="event-card h-100">
                             <?php switch ($i) {
                                 case 0:
