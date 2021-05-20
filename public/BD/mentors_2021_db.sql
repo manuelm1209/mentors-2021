@@ -103,6 +103,7 @@ CREATE TABLE IF NOT EXISTS `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `area`, `name`, `link`, `password`) VALUES
+(0, '0', '0', '0', '0'),
 (1, 'Estrategia', '¿Cómo monetizar mi data?', 'https://link1', 'pass1'),
 (2, 'Estrategia', '¿Cómo crear una empresa con triple impacto?', 'https://link2', 'pass2'),
 (3, 'Estrategia', '¿Cómo mejorar o mantener la experiencia de nuestros clientes B2B por medio de la virtualidad?', 'https://link3', 'pass3'),
