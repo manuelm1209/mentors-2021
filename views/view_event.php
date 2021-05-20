@@ -122,7 +122,7 @@
                                     echo '<a class="button-event" href="' . $this->third_user_session[0]->link . '" target="_blank">Entrar</a>';
                                     break;
                                 case 3:
-                                    if ($this->fourth_session[0] != '0') {
+                                    if ($this->fourth_user_session[0]->area != '0') {
                                         echo '<p class="event-hour">Sesión 4:<br>10:40 A.M. - 11:40 P.M.</p>';
                                         echo '<p class="area-event">' . $this->fourth_user_session[0]->area . '</p>';
                                         echo '<p class="name-event">' . $this->fourth_user_session[0]->name . '</p>';
