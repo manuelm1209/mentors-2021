@@ -61,7 +61,7 @@ function change_video(){
 
     // if( day === 2 && hour === 8 && minutes === 02 && seconds === 00 ){
     // Hora de inicio del video introductorio del evento.
-    if( day === 21 && hour === 17 && minutes === 45 && seconds === 00 ){
+    if( day === 21 && hour === 17 && minutes === 58 && seconds === 00 ){
         video.removeAttr('loop');
         $('#main-video-section').attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorioDiaDelEventoMentorsDay.mp4');
@@ -72,13 +72,16 @@ function change_video(){
         });
     }
 
-    // if( day === 2 && hour === 9 && minutes === 00 && seconds === 0){
-    if( day === 21 && hour === 17 && minutes === 49 && seconds === 0){
+    //if( day === 2 && hour === 9 && minutes === 00 && seconds === 0){
+    //
+    if( day === 21 && hour === 18 && minutes === 00 && seconds === 0){
         video.removeAttr('controls');
         video.attr('muted', '');
         video.attr('loop', '');
         video.attr('autoplay', '');
-        video.attr('src', url + '/public/videos/LoopLogos_horarios.mp4');
+        //video.attr('src', url + '/public/videos/LoopLogos_horarios.mp4');
+        //Prueba de cambio de url del video.
+        video.attr('src', url + 'videos/LoopLogos_horarios.mp4');
     }
 
     if(start_date.time > 0){
@@ -121,7 +124,7 @@ function loadVideo(){
 
     //if(day === 2 && hour === 8 && (minutes >= 02 && minutes <= 59)){
     //Minutos en q se mantiene el video introductorio del evento.
-    if(day === 21 && hour === 17 && (minutes >= 45 && minutes <= 48)){
+    if(day === 21 && hour === 17 && (minutes >= 58 && minutes <= 59)){
         video.removeAttr('loop');
         video.attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorioDiaDelEventoMentorsDay.mp4');
