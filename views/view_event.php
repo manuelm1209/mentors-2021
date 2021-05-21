@@ -60,7 +60,7 @@
         </div>
         <div class="row justify-content-center pb-4">
             <div class="col">
-                <h2 class="title-red">TUS SESIONES</h2>
+                <h2 class="title-red">TU AGENDA</h2>
                 <p class="pt-3">Ten presente que cada sesión tiene una hora indicada de ingreso. Una vez finalice cada mentoría regresa aquí para acceder a la siguiente.</p>
             </div>
         </div>
@@ -101,29 +101,41 @@
                         <div class="event-card h-100">
                             <?php switch ($i) {
                                 case 0:
-                                    echo '<p class="event-hour">Sesión 1:<br>8:20 A.M. - 9:20 A.M.</p>';
-                                    echo '<p class="area-event">' . $this->first_user_session[0]->area . '</p>';
-                                    echo '<p class="name-event">' . $this->first_user_session[0]->name . '</p>';
-                                    echo '<p class="name-event">Contraseña: ' . $this->first_user_session[0]->password . '</p>';
-                                    echo '<a class="button-event" href="' . $this->first_user_session[0]->link . '" target="_blank">Entrar</a>';
-                                    break;
+                                    if ($this->first_user_session[0]->area != '0') {
+                                        echo '<p class="event-hour">Sesión:<br>9:20 A.M. - 10:20 A.M.</p>';
+                                        echo '<p class="area-event">' . $this->first_user_session[0]->area . '</p>';
+                                        echo '<p class="name-event">' . $this->first_user_session[0]->name . '</p>';
+                                        echo '<p class="name-event">Contraseña: ' . $this->first_user_session[0]->password . '</p>';
+                                        echo '<a class="button-event" href="' . $this->first_user_session[0]->link . '" target="_blank">Entrar</a>';
+                                        break;
+                                    } else {
+                                        break;
+                                    }
                                 case 1:
-                                    echo '<p class="event-hour">Sesión 2:<br>9:30 A.M. - 10:30 A.M.</p>';
-                                    echo '<p class="area-event">' . $this->second_user_session[0]->area . '</p>';
-                                    echo '<p class="name-event">' . $this->second_user_session[0]->name . '</p>';
-                                    echo '<p class="name-event">Contraseña: ' . $this->second_user_session[0]->password . '</p>';
-                                    echo '<a class="button-event" href="' . $this->second_user_session[0]->link . '" target="_blank">Entrar</a>';
-                                    break;
+                                    if ($this->second_user_session[0]->area != '0') {
+                                        echo '<p class="event-hour">Sesión:<br>10:30 A.M. - 11:30 A.M.</p>';
+                                        echo '<p class="area-event">' . $this->second_user_session[0]->area . '</p>';
+                                        echo '<p class="name-event">' . $this->second_user_session[0]->name . '</p>';
+                                        echo '<p class="name-event">Contraseña: ' . $this->second_user_session[0]->password . '</p>';
+                                        echo '<a class="button-event" href="' . $this->second_user_session[0]->link . '" target="_blank">Entrar</a>';
+                                        break;
+                                    } else {
+                                        break;
+                                    }
                                 case 2:
-                                    echo '<p class="event-hour">Sesión 3:<br>10:40 A.M. - 11:40 P.M.</p>';
-                                    echo '<p class="area-event">' . $this->third_user_session[0]->area . '</p>';
-                                    echo '<p class="name-event">' . $this->third_user_session[0]->name . '</p>';
-                                    echo '<p class="name-event">Contraseña: ' . $this->third_user_session[0]->password . '</p>';
-                                    echo '<a class="button-event" href="' . $this->third_user_session[0]->link . '" target="_blank">Entrar</a>';
-                                    break;
+                                    if ($this->third_user_session[0]->area != '0') {
+                                        echo '<p class="event-hour">Sesión:<br>3:20 P.M. - 4:40 P.M.</p>';
+                                        echo '<p class="area-event">' . $this->third_user_session[0]->area . '</p>';
+                                        echo '<p class="name-event">' . $this->third_user_session[0]->name . '</p>';
+                                        echo '<p class="name-event">Contraseña: ' . $this->third_user_session[0]->password . '</p>';
+                                        echo '<a class="button-event" href="' . $this->third_user_session[0]->link . '" target="_blank">Entrar</a>';
+                                        break;
+                                    } else {
+                                        break;
+                                    }
                                 case 3:
                                     if ($this->fourth_user_session[0]->area != '0') {
-                                        echo '<p class="event-hour">Sesión 4:<br>10:40 A.M. - 11:40 P.M.</p>';
+                                        echo '<p class="event-hour">Sesión:<br>4:30 P.M. - 5:30 P.M.</p>';
                                         echo '<p class="area-event">' . $this->fourth_user_session[0]->area . '</p>';
                                         echo '<p class="name-event">' . $this->fourth_user_session[0]->name . '</p>';
                                         echo '<p class="name-event">Contraseña: ' . $this->fourth_user_session[0]->password . '</p>';
@@ -138,6 +150,7 @@
             <?php }
             } ?>
         </div>
+        <!--
         <div class="row justify-content-center pt-5">
             <div class="col">
                 <div class="networking-block text-center">
@@ -146,6 +159,7 @@
                 </div>
             </div>
         </div>
+        -->
         <?php if ($this->user[0]->type === 2) { ?>
             <div class="row justify-content-center pt-5 pb-4">
                 <div class="col">
@@ -155,7 +169,7 @@
             </div>
             <div class="row">
                 <div class="col-4">
-                    <h5 class="text-center">Sesión 1</h5>
+                    <h5 class="text-center">Sesión 9:20 A.M. - 10:20 A.M.</h5>
                     <table class="table table-sm table-dark text-center table-responsive">
                         <tr>
                             <th scope="col">#</th>
@@ -176,7 +190,7 @@
                     </table>
                 </div>
                 <div class="col-4">
-                    <h5 class="text-center">Sesión 2</h5>
+                    <h5 class="text-center">Sesión 10:30 A.M. - 11:30 A.M.</h5>
                     <table class="table table-sm table-dark text-center table-responsive">
                         <tr>
                             <th scope="col">#</th>
@@ -197,7 +211,7 @@
                     </table>
                 </div>
                 <div class="col-4">
-                    <h5 class="text-center">Sesión 3</h5>
+                    <h5 class="text-center">Sesión 3:20 P.M. - 4:40 P.M.</h5>
                     <table class="table table-sm table-dark text-center table-responsive">
                         <tr>
                             <th scope="col">#</th>
@@ -393,7 +407,7 @@
     <div class="container">
         <div class="row pb-5 pt-5 justify-content-center">
             <div class="col-12 pb-5">
-                <h2 class="title-red">ALIADOS DE DIFUSIÓN</h2>
+                <h2 class="title-red">APOYAN</h2>
             </div>
             <div class="col-12">
 		<img src="https://www.endeavor.org.co/wp-content/uploads/2021/04/Bannerblanco-AliadosMentors-cambio.png" alt="">
