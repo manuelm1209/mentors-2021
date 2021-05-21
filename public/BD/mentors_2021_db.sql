@@ -102,7 +102,6 @@ CREATE TABLE IF NOT EXISTS `sessions` (
 -- Volcado de datos para la tabla `sessions`
 --
 
-
 INSERT INTO `sessions` (`id`, `area`, `name`, `link`, `password`) VALUES
 (0, '0', '0', '0', '0'),
 (1, 'Estrategia', '¿Cómo monetizar mi data?', 'https://link1', 'pass1'),
