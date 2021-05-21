@@ -58,7 +58,8 @@ function change_video(){
         $('#nps_form').removeClass('hidden');
     }
 
-    if( day === 2 && hour === 8 && minutes === 02 && seconds === 00 ){
+    // if( day === 2 && hour === 8 && minutes === 02 && seconds === 00 ){
+    if( day === 21 && hour === 17 && minutes === 25 && seconds === 00 ){
         video.removeAttr('loop');
         $('#main-video-section').attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorioDiaDelEventoMentorsDay.mp4');
@@ -69,7 +70,8 @@ function change_video(){
         });
     }
 
-    if( day === 2 && hour === 9 && minutes === 00 && seconds === 0){
+    // if( day === 2 && hour === 9 && minutes === 00 && seconds === 0){
+    if( day === 21 && hour === 17 && minutes === 28 && seconds === 0){
         video.removeAttr('controls');
         video.attr('muted', '');
         video.attr('loop', '');
@@ -115,7 +117,8 @@ function loadVideo(){
 
     video = $('#main-video-section');
 
-    if(day === 2 && hour === 8 && (minutes >= 02 && minutes <= 59)){
+    //if(day === 2 && hour === 8 && (minutes >= 02 && minutes <= 59)){
+    if(day === 21 && hour === 17 && (minutes >= 28 && minutes <= 35)){
         video.removeAttr('loop');
         video.attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorioDiaDelEventoMentorsDay.mp4');
