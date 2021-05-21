@@ -38,12 +38,7 @@ CREATE TABLE IF NOT EXISTS `nps` (
 --
 
 INSERT INTO `nps` (`email`, `score`, `opinion`) VALUES
-('alejandrojpf@hotmail.com', 9, ''),
-('comercial@retoucherie.com.co', 9, ''),
-('juanestebanduque@ilisto.co', 10, ''),
-('viso16@gmail.com', 10, ''),
-('gerenciaoperativa@inpre.com.co', 9, ''),
-('jose.mora@databiz.co', 10, 'me gustó mucho la organización, los mentores y el contenido. ');
+('manuel.montoya@endeavor.org.co', 10, '');
 
 -- --------------------------------------------------------
 
@@ -267,7 +262,8 @@ ALTER TABLE `records`
   ADD KEY `email_record` (`email`),
   ADD KEY `first_session` (`first_session`),
   ADD KEY `second_session` (`second_session`),
-  ADD KEY `third_session` (`third_session`);
+  ADD KEY `third_session` (`third_session`),
+  ADD KEY `fourth_session` (`fourth_session`);
 
 --
 -- Indices de la tabla `sessions`
@@ -312,7 +308,8 @@ ALTER TABLE `records`
   ADD CONSTRAINT `email_record` FOREIGN KEY (`email`) REFERENCES `users` (`Email`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `first_session` FOREIGN KEY (`first_session`) REFERENCES `sessions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `second_session` FOREIGN KEY (`second_session`) REFERENCES `sessions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `third_session` FOREIGN KEY (`third_session`) REFERENCES `sessions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `third_session` FOREIGN KEY (`third_session`) REFERENCES `sessions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fourth_session` FOREIGN KEY (`fourth_session`) REFERENCES `sessions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `staff_meeting`
