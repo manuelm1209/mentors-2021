@@ -73,16 +73,16 @@
                             <?php if ($this->user[0]->type === 3) {
                                 switch ($i) {
                                     case 0:
-                                        echo '<p class="event-hour">Sesión 1:<br>8:20 A.M. - 9:20 A.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN 1:<br>8:20 A.M. - 9:20 A.M.</p>';
                                         break;
                                     case 1:
-                                        echo '<p class="event-hour">Sesión 2:<br>9:30 A.M. - 10:30 A.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN 2:<br>9:30 A.M. - 10:30 A.M.</p>';
                                         break;
                                     case 2:
-                                        echo '<p class="event-hour">Sesión 3:<br>10:40 A.M. - 11:40 P.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN 3:<br>10:40 A.M. - 11:40 P.M.</p>';
                                         break;
                                     case 3:
-                                        echo '<p class="event-hour">Sesión 4:<br>10:40 A.M. - 11:40 P.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN 4:<br>10:40 A.M. - 11:40 P.M.</p>';
                                         break;
                                 }
                             } ?>
@@ -102,7 +102,7 @@
                             <?php switch ($i) {
                                 case 0:
                                     if ($this->first_user_session[0]->area != '0') {
-                                        echo '<p class="event-hour">Sesión:<br>9:20 A.M. - 10:20 A.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN:<br>9:20 A.M. - 10:20 A.M.</p>';
                                         echo '<p class="area-event">' . $this->first_user_session[0]->area . '</p>';
                                         echo '<p class="name-event">' . $this->first_user_session[0]->name . '</p>';
                                         echo '<p class="name-event">Contraseña: ' . $this->first_user_session[0]->password . '</p>';
@@ -113,7 +113,7 @@
                                     }
                                 case 1:
                                     if ($this->second_user_session[0]->area != '0') {
-                                        echo '<p class="event-hour">Sesión:<br>10:30 A.M. - 11:30 A.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN:<br>10:30 A.M. - 11:30 A.M.</p>';
                                         echo '<p class="area-event">' . $this->second_user_session[0]->area . '</p>';
                                         echo '<p class="name-event">' . $this->second_user_session[0]->name . '</p>';
                                         echo '<p class="name-event">Contraseña: ' . $this->second_user_session[0]->password . '</p>';
@@ -124,7 +124,7 @@
                                     }
                                 case 2:
                                     if ($this->third_user_session[0]->area != '0') {
-                                        echo '<p class="event-hour">Sesión:<br>3:20 P.M. - 4:40 P.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN:<br>3:20 P.M. - 4:40 P.M.</p>';
                                         echo '<p class="area-event">' . $this->third_user_session[0]->area . '</p>';
                                         echo '<p class="name-event">' . $this->third_user_session[0]->name . '</p>';
                                         echo '<p class="name-event">Contraseña: ' . $this->third_user_session[0]->password . '</p>';
@@ -135,7 +135,7 @@
                                     }
                                 case 3:
                                     if ($this->fourth_user_session[0]->area != '0') {
-                                        echo '<p class="event-hour">Sesión:<br>4:30 P.M. - 5:30 P.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN:<br>4:30 P.M. - 5:30 P.M.</p>';
                                         echo '<p class="area-event">' . $this->fourth_user_session[0]->area . '</p>';
                                         echo '<p class="name-event">' . $this->fourth_user_session[0]->name . '</p>';
                                         echo '<p class="name-event">Contraseña: ' . $this->fourth_user_session[0]->password . '</p>';
@@ -168,8 +168,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <h5 class="text-center">Sesión 9:20 A.M. - 10:20 A.M.</h5>
+                <div class="col-6">
+                    <h5 class="text-center">SESIÓN 9:20 A.M. - 10:20 A.M.</h5>
                     <table class="table table-sm table-dark text-center table-responsive">
                         <tr>
                             <th scope="col">#</th>
@@ -189,8 +189,8 @@
                         } ?>
                     </table>
                 </div>
-                <div class="col-4">
-                    <h5 class="text-center">Sesión 10:30 A.M. - 11:30 A.M.</h5>
+                <div class="col-6">
+                    <h5 class="text-center">SESIÓN 10:30 A.M. - 11:30 A.M.</h5>
                     <table class="table table-sm table-dark text-center table-responsive">
                         <tr>
                             <th scope="col">#</th>
@@ -210,8 +210,8 @@
                         } ?>
                     </table>
                 </div>
-                <div class="col-4">
-                    <h5 class="text-center">Sesión 3:20 P.M. - 4:40 P.M.</h5>
+                <div class="col-6">
+                    <h5 class="text-center">SESIÓN 3:20 P.M. - 4:40 P.M.</h5>
                     <table class="table table-sm table-dark text-center table-responsive">
                         <tr>
                             <th scope="col">#</th>
@@ -231,8 +231,8 @@
                         } ?>
                     </table>
                 </div>
-                <div class="col-4">
-                    <h5 class="text-center">Sesión 4</h5>
+                <div class="col-6">
+                    <h5 class="text-center">SESIÓN 4:30 P.M. - 5:30 P.M.</h5>
                     <table class="table table-sm table-dark text-center table-responsive">
                         <tr>
                             <th scope="col">#</th>
@@ -262,7 +262,7 @@
             </div>
             <div class="row">
                     <div class="col-12" id="first-session-mentor">
-                        <h4 class="text-center">SESIÓN 1</h4>
+                        <h4 class="text-center">SESIÓN 9:20 A.M. - 10:20 A.M.</h4>
                     </div>
                     <?php foreach ($this->first_session_mentor as $key => $val) { ?>
                         <div class="col-lg-4 col-md-6 pb-3 h-100">
@@ -279,7 +279,7 @@
                         </div>
                     <?php } ?>
                     <div class="col-12" id="first-session-mentor">
-                        <h4 class="text-center">SESIÓN 2</h4>
+                        <h4 class="text-center">SESIÓN 10:30 A.M. - 11:30 A.M.</h4>
                     </div>
                     <?php foreach ($this->second_session_mentor as $key => $val) { ?>
                         <div class="col-lg-4 col-md-6 pb-3 h-100">
@@ -296,7 +296,7 @@
                         </div>
                     <?php } ?>
                     <div class="col-12" id="first-session-mentor">
-                        <h4 class="text-center">SESIÓN 3</h4>
+                        <h4 class="text-center">SESIÓN 3:20 P.M. - 4:40 P.M.</h4>
                     </div>
                     <?php foreach ($this->third_session_mentor as $key => $val) { ?>
                         <div class="col-lg-4 col-md-6 pb-3 h-100">
@@ -313,7 +313,7 @@
                         </div>
                     <?php } ?>
                     <div class="col-12" id="first-session-mentor">
-                        <h4 class="text-center">SESIÓN 4</h4>
+                        <h4 class="text-center">SESIÓN 4:30 P.M. - 5:30 P.M.</h4>
                     </div>
                     <?php foreach ($this->fourth_session_mentor as $key => $val) { ?>
                         <div class="col-lg-4 col-md-6 pb-3 h-100">
@@ -410,7 +410,7 @@
                 <h2 class="title-red">APOYAN</h2>
             </div>
             <div class="col-12">
-		<img src="https://www.endeavor.org.co/wp-content/uploads/2021/04/Bannerblanco-AliadosMentors-cambio.png" alt="">
+		<img src="https://www.endeavor.org.co/wp-content/uploads/2021/05/Banner-MentorsDay-ALIADOS.png" alt="">
             </div>
         </div>
     </div>
