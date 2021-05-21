@@ -48,6 +48,7 @@ function change_video(){
     let day = today.getDate();
 
     //let start_date = getTime("Wed Sep 2 2020 08:10:00 GMT-0500");
+    // Fecha para el timer.
     let start_date = getTime("Wed May 26 2021 09:10:00 GMT-0500");
 
     let url = window.location.origin;
@@ -59,7 +60,8 @@ function change_video(){
     }
 
     // if( day === 2 && hour === 8 && minutes === 02 && seconds === 00 ){
-    if( day === 21 && hour === 17 && minutes === 25 && seconds === 00 ){
+    // Hora de inicio del video introductorio del evento.
+    if( day === 21 && hour === 17 && minutes === 45 && seconds === 00 ){
         video.removeAttr('loop');
         $('#main-video-section').attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorioDiaDelEventoMentorsDay.mp4');
@@ -71,7 +73,7 @@ function change_video(){
     }
 
     // if( day === 2 && hour === 9 && minutes === 00 && seconds === 0){
-    if( day === 21 && hour === 17 && minutes === 28 && seconds === 0){
+    if( day === 21 && hour === 17 && minutes === 49 && seconds === 0){
         video.removeAttr('controls');
         video.attr('muted', '');
         video.attr('loop', '');
@@ -118,7 +120,8 @@ function loadVideo(){
     video = $('#main-video-section');
 
     //if(day === 2 && hour === 8 && (minutes >= 02 && minutes <= 59)){
-    if(day === 21 && hour === 17 && (minutes >= 28 && minutes <= 35)){
+    //Minutos en q se mantiene el video introductorio del evento.
+    if(day === 21 && hour === 17 && (minutes >= 45 && minutes <= 48)){
         video.removeAttr('loop');
         video.attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorioDiaDelEventoMentorsDay.mp4');
