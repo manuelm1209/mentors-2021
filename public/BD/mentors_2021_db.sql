@@ -169,7 +169,9 @@ CREATE TABLE IF NOT EXISTS `mentors_meeting` (
 --
 
 INSERT INTO `mentors_meeting` (`email`, `session`) VALUES
-('prueba.mentor@endeavor.org.co', 1);
+('prueba.mentor@endeavor.org.co', 1),
+('prueba2.mentor@endeavor.org.co', 20),
+('prueba3.mentor@endeavor.org.co', 23);
 
 -- --------------------------------------------------------
 
@@ -204,6 +206,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`Name`, `Last_name`, `id`, `Email`, `Tipo`, `company`, `position`, `website`, `billing`, `description`, `q_first`, `q_second`, `q_third`, `q_fourth`) VALUES
 ('Manuel', 'Montoya', '', 'manuel.montoya@endeavor.org.co', 1, '', '', '', '', '', '', '', '', ''),
 ('Prueba', 'Mentor', '', 'prueba.mentor@endeavor.org.co', 4, '', '', '', '', '', '', '', '', ''),
+('Prueba', 'Mentor', '', 'prueba2.mentor@endeavor.org.co', 4, '', '', '', '', '', '', '', '', ''),
+('Prueba', 'Mentor', '', 'prueba3.mentor@endeavor.org.co', 4, '', '', '', '', '', '', '', '', ''),
 ('Mary', 'Nuñez', '', 'mary.nunez@endeavor.org.co', 2, '', '', '', '', '', '', '', '', ''),
 ('Silvia', 'Florez', '', 'silvia.florez@endeavor.org.co', 2, '', '', '', '', '', '', '', '', ''),
 ('maria fernanda', 'restrepo montoya', '900932231', 'suministrosardila@gmail.com', 3, 'suministrosardila@gmail.com', 'gerente administrativa y financiera', 'no tenemos actualmente', 'Más de 500 millones', 'somos distribuidores mayoristas ferreteros', 'que pasos debo seguir, debo tercerizar o contratar directamente', 'que pasos debo seguir', 'null', 'null'),
