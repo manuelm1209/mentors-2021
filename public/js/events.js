@@ -73,7 +73,7 @@ function change_video(){
     }
 
     //if( day === 2 && hour === 9 && minutes === 00 && seconds === 0){
-    //
+    //Video para el minuto siguiente al video introductorio.
     if( day === 21 && hour === 18 && minutes === 07 && seconds === 0){
         video.removeAttr('controls');
         video.attr('muted', '');
