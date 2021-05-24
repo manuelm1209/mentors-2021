@@ -67,6 +67,7 @@
         <div class="row justify-content-center">
             <?php if ($this->user[0]->type === 1 || $this->user[0]->type === 2 || $this->user[0]->type === 4) {
                 $i = 0;
+                $j = 0;
                 foreach ($this->sessions as $session) { ?>
                     <div class="col-md-4 col-sm-6 pt-1 pb-1">
                         <div class="event-card h-100">
@@ -86,6 +87,20 @@
                                         break;
                                 }
                             } ?>
+
+
+                            <?php if ($this->user[0]->type === 1 && $j <= 14) {
+                                echo '<p class="event-hour">SESIÓN A.M.</p>';
+                                $j = $j + 1;
+                                }
+                                elseif ($this->user[0]->type === 1 && $j > 14) {
+                                    echo '<p class="event-hour">SESIÓN P.M.</p>';
+                                    $j = $j + 1;
+                                    }
+
+                            ?>
+
+
                             <p class="area-event"><?php echo $session->area; ?></p>
                             <p class="name-event"><?php echo $session->name; ?></p>
                             <p class="name-event">Contraseña: <?php echo $session->password; ?></p>
