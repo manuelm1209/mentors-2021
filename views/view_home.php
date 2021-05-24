@@ -3,7 +3,7 @@
 <div class="container-fluid container-home">
     <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6">
-            <img src="<?php echo constant('URL_S3') ?>images/LogoBlanco.svg" alt="Endeavor Mentors Day Live" class="logo-home">
+            <img src="<?php echo constant('URL_S3') ?>images/LogoBlanco-2.png" alt="Endeavor Mentors Day Live" class="logo-home">
         </div>
     </div>
     <div class="row pt-3 pb-2">
@@ -30,7 +30,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6 pt-3">
             <p class="normal-text text-center">
-                ¿Tienes problemas? Comunícate con nosotros: <a class="qa-link" href="https://wa.me/573116258427?text=Hola,%20tengo%20una%20duda%20frente%20al%20evento%20Mentors'%20Day%20Live" target="_blank"><img class="qa-icon" src="<?php echo constant('URL_S3') ?>images/socialMedia/whatsapp.png" alt=""></a></p>
+                ¿Tienes problemas? Comunícate con nosotros: <a class="qa-link" href="https://wa.link/z4hx2d" target="_blank"><img class="qa-icon" src="<?php echo constant('URL_S3') ?>images/socialMedia/whatsapp.png" alt=""></a></p>
         </div>
     </div>
     <div class="row justify-content-center">

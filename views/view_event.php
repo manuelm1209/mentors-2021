@@ -5,7 +5,7 @@
 <section class="main-event-section">
     <header class="main-header">
         <div class="logo-main-header">
-            <img src="<?php echo constant('URL_S3') ?>images/LogoBlanco.svg" alt="Endeavor Mentors' Live">
+            <img src="<?php echo constant('URL_S3') ?>images/LogoBlanco-2.png" alt="Endeavor Mentors' Live">
         </div>
         <a href="<?php echo constant('URL') ?>/event/logOut" class="log-out">Cerrar sesión</a>
     </header>
@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-6 pt-4">
                 <p class="normal-text text-center">
-                    ¿Tienes problemas? Comunícate con nosotros: <a class="qa-link" href="https://wa.me/573116258427?text=Hola,%20tengo%20una%20duda%20frente%20al%20evento%20Mentors'%20Day%20Live" target="_blank"><img class="qa-icon" src="<?php echo constant('URL_S3') ?>images/socialMedia/whatsapp.png" alt=""></a></p>
+                    ¿Tienes problemas? Comunícate con nosotros: <a class="qa-link" href="https://wa.link/z4hx2d" target="_blank"><img class="qa-icon" src="<?php echo constant('URL_S3') ?>images/socialMedia/whatsapp.png" alt=""></a></p>
             </div>
         </div>
         <div class="row pb-4 justify-content-center hidden" id="nps_form">
@@ -340,7 +340,7 @@
                     <li>Accede desde un portátil o un equipo de escritorio para tener una mejor experiencia.</li>
                     <li>Comprueba tu conexión a internet. Tener tu equipo conectado por medio de un cable de red garantizará una mayor estabilidad de la señal.</li>
                     <li>Ten a la mano una libreta para tomar nota de cada lección. Te recomendamos también tener listas tus preguntas para los mentores.</li>
-                    <li>No olvides calificar cada mentoría, aparecerá una breve encuesta apenas termine la sesión. Es la forma de conocer tu opinión y mejorar nuestros eventos.</li>
+                    <li>Tu calificación es muy importante para nosotros. Por favor responde la encuesta solicitada al finalizar cada jornada. Además, entrarás a concursar por una suscripción de Platzi, un bono de $200,000 para pautar en Mi Megáfono y una asesoría personalizada con Viliv.</li>
                     <li>Tendrás 10 minutos de receso entre las sesiones, aprovéchalos para conectarte a tu siguiente sesión.</li>
                     <li>Comparte en redes sociales los mejores consejos que recibiste de los Mentores Endeavor con el #MentorsDay.</li>
                 </ul>
