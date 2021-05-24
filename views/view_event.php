@@ -95,6 +95,7 @@
             <?php $i++;
                 }
             } ?>
+
             <?php if ($this->user[0]->type === 3) {
                 for ($i = 0; $i < 4; $i++) { ?>
                     <div class="col-md-6 col-sm-6 pt-1 pb-1">
@@ -150,6 +151,7 @@
             <?php }
             } ?>
         </div>
+       
         <!--
         <div class="row justify-content-center pt-5">
             <div class="col">
@@ -160,6 +162,7 @@
             </div>
         </div>
         -->
+        
         <?php if ($this->user[0]->type === 2) { ?>
             <div class="row justify-content-center pt-5 pb-4">
                 <div class="col">
