@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="col-lg-8 col-md-10">
-                <video id="main-video-section" src="<?php echo constant('URL_S3') ?>videos/LoopdeLogosMentorsDay.mp4" class="video-section-mentors" autoplay muted playsinline loop>
+                <video id="main-video-section" src="<?php echo constant('URL_S3') ?>videos/LoopdeLogosMentorsDay2021.mp4" class="video-section-mentors" autoplay muted playsinline loop>
                     Tu navegador no soporta video HTML.
                 </video>
             </div>

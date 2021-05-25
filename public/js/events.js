@@ -67,7 +67,7 @@ function change_video(){
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorio2021.mp4');
         video.on('ended', function(){
             video.removeAttr('autoplay');
-            video.attr('poster', url_s3 + 'images/placeholder_mentors.jpg');
+            video.attr('poster', url_s3 + 'images/placeholder_mentors2021.png');
             video[0].load();
         });
     }
@@ -81,7 +81,7 @@ function change_video(){
         video.attr('autoplay', '');
         //video.attr('src', url + '/public/videos/LoopLogos_horarios.mp4');
         //Prueba de cambio de url del video.
-        video.attr('src', url_s3 + 'videos/LoopLogos_horarios.mp4');
+        video.attr('src', url_s3 + 'videos/LoopdeLogosMentorsDay2021.mp4');
     }
 
     if(start_date.time > 0){
