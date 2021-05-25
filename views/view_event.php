@@ -241,7 +241,7 @@
                     </table>
                 </div>
                 <div class="col-6">
-                    <h5 class="text-center">SESIÓN 3:20 P.M. - 4:40 P.M.</h5>
+                    <h5 class="text-center">SESIÓN 3:20 P.M. - 4:20 P.M.</h5>
                     <table class="table table-sm table-dark text-center table-responsive">
                         <tr>
                             <th scope="col">#</th>
