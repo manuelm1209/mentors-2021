@@ -1,4 +1,7 @@
 /config/config.php
-/public/BD/datos
+/public/BD/users
+/public/BD/users_copy
+/public/BD/records
+/public/BD/records_copy
 /.vscode/
 /.prettierignore/
