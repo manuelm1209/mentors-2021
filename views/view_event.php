@@ -89,11 +89,11 @@
                             } ?>
 
 
-                            <?php if ($this->user[0]->type === 1 && $j <= 14) {
+                            <?php if ($this->user[0]->type === 1 && $j <= 13 && $session->area != "0") {
                                 echo '<p class="event-hour">SESIÓN A.M.</p>';
                                 $j = $j + 1;
                                 }
-                                elseif ($this->user[0]->type === 1 && $j > 14) {
+                                elseif ($this->user[0]->type === 1 && $j > 13) {
                                     echo '<p class="event-hour">SESIÓN P.M.</p>';
                                     $j = $j + 1;
                                     }
@@ -101,10 +101,10 @@
                             ?>
 
 
-                            <p class="area-event"><?php echo $session->area; ?></p>
-                            <p class="name-event"><?php echo $session->name; ?></p>
-                            <p class="name-event">Contraseña: <?php echo $session->password; ?></p>
-                            <a class="button-event" href="<?php echo $session->link; ?>" target="_blank">Entrar</a>
+                            <p class="area-event"><?php if ($session->area != "0" ) {echo $session->area;} ?></p>
+                            <p class="name-event"><?php if ($session->area != "0" ) {echo $session->name;} ?></p>
+                            <p class="name-event">Contraseña: <?php if ($session->area != "0" ) {echo $session->password;} ?></p>
+                            <a class="button-event" href="<?php if ($session->area != "0" ) {echo $session->link;} ?>" target="_blank">Entrar</a>
                         </div>
                     </div>
             <?php $i++;

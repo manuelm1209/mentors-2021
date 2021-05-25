@@ -144,8 +144,35 @@ CREATE TABLE IF NOT EXISTS `staff_meeting` (
 --
 
 INSERT INTO `staff_meeting` (`email`, `id_session`) VALUES
-('mary.nunez@endeavor.org.co', 1),
-('silvia.florez@endeavor.org.co', 2);
+('nicolas.toro.am', 1),
+('nicolas.toro.pm', 21),
+('ana.rocha.am', 2),
+('ana.rocha.pm', 19),
+('juliana.covezdy.pm', 17)
+('mary.nunez.am', 4),
+('mary.nunez.pm', 20),
+('felipe.comi.am', 5),
+('felipe.comi.pm', 18),
+('silvia.florez.am', 6),
+('maria.uribe.am', 7),
+('maria.uribe.pm', 27),
+('vanessa.guerrero.am', 8),
+('pablo.camacho.am', 9),
+('pablo.camacho.pm', 24),
+('susana.restrepo.am', 10),
+('susana.restrepo.am', 23),
+('mariana.pineres.am', 11),
+('mariana.pineres.pm', 25),
+('alejandra.gonzalez.am', 12),
+('alejandra.gonzalez.pm', 22),
+('hernando.trinidad.am', 13),
+('hernando.trinidad.pm', 29),
+('erika.vergara.am', 14),
+('erika.vergara.pm', 16),
+('pasanteproyectos.pm', 15),
+('sebastian.lozano.pm', 28);
+
+
 
 
 -- --------------------------------------------------------
@@ -199,6 +226,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 
 INSERT INTO `users` (`Name`, `Last_name`, `id`, `Email`, `Tipo`, `company`, `position`, `website`, `billing`, `description`, `q_first`, `q_second`, `q_third`, `q_fourth`) VALUES
+('Prueba', 'Admin', '', 'prueba.admin@endeavor.org.co', 1, '', '', '', '', '', '', '', '', ''),
 ('Manuel', 'Montoya', '', 'manuel.montoya@endeavor.org.co', 1, '', '', '', '', '', '', '', '', ''),
 ('Juan Diego', 'Pulido', '', 'juan.pulido@endeavor.org.co', 1, '', '', '', '', '', '', '', '', ''),
 ('Julian', 'Castro', '', 'julian.castro@endeavor.org.co', 1, '', '', '', '', '', '', '', '', ''),
@@ -222,12 +250,15 @@ INSERT INTO `users` (`Name`, `Last_name`, `id`, `Email`, `Tipo`, `company`, `pos
 ('Yina', 'Perazzo', '', 'yperazzo@cccartagena.org.co', 1, '', '', '', '', '', '', '', '', ''),
 ('Maria Camila', 'Morales', '', 'mariacamilam02@gmail.com', 1, '', '', '', '', '', '', '', '', ''),
 ('Camila', 'Mancera', '', 'andimancerar@gmail.com', 1, '', '', '', '', '', '', '', '', ''),
-('N', 'A', '', 'E', 1, '', '', '', '', '', '', '', '', ''),
+('Daniel', 'Ospina', '', 'daniel.ospina@endeavor.org.co', 1, '', '', '', '', '', '', '', '', ''),
+('Diana ', 'Osorio', '', 'diana.osorio@sap.com', 1, '', '', '', '', '', '', '', '', ''),
+('Maria', 'Quevedo', '', 'maria.quevedo@sap.com', 1, '', '', '', '', '', '', '', '', ''),
 ('Prueba', 'Mentor', '', 'prueba.mentor@endeavor.org.co', 4, '', '', '', '', '', '', '', '', ''),
 ('Prueba', 'Mentor', '', 'prueba2.mentor@endeavor.org.co', 4, '', '', '', '', '', '', '', '', ''),
 ('Prueba', 'Mentor', '', 'prueba3.mentor@endeavor.org.co', 4, '', '', '', '', '', '', '', '', ''),
-('Mary', 'Nuñez', '', 'mary.nunez@endeavor.org.co', 2, '', '', '', '', '', '', '', '', ''),
-('Silvia', 'Florez', '', 'silvia.florez@endeavor.org.co', 2, '', '', '', '', '', '', '', '', ''),
+
+
+
 ('maria fernanda', 'restrepo montoya', '900932231', 'suministrosardila@gmail.com', 3, 'suministrosardila@gmail.com', 'gerente administrativa y financiera', 'no tenemos actualmente', 'Más de 500 millones', 'somos distribuidores mayoristas ferreteros', 'que pasos debo seguir, debo tercerizar o contratar directamente', 'que pasos debo seguir', 'null', 'null'),
 ('Milene', 'Jauregui', '63539547', 'milene.jauregui@social-mente.org', 3, 'SocialMente', 'Cofundora', 'www.social-mente.org', 'Todavía no facturo', 'Plataforma de conocimiento colaborativo, empresas comparten conocimiento alineado a necesidades de negocio y contratac, jóvenes se certifican y hacen parte de nube de talentos para el mercado laboral.', '1. Cómo llegar a los cargos más importantes de empresas grandes a través de digital?', 'Cómo generar un plan realmente alcanzable? qué tan ambicioso? Cómo medir?', 'null', 'null'),
 ('Juan', 'Diaz', '900557218', 'juan@koggi.co', 3, 'Koggi', 'CEO', 'Koggi.co', 'Hasta 70 millones', 'Somos una plataforma con inteligencia artificial que permite facilitar el acceso  a la vivienda simplificando la busqueda, solicitud y aprobación de creditos hipotecarios. ', 'Como acceder a una red de inversionistas en estos momentos?', 'Como son los tipos de levantamiento de capital para una startup?', 'Cómo determinar el cap value de mi compañía?', 'Finanzas & Fundraising: ¿Cómo conocer el valor de mi compañía?'),
