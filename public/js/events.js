@@ -49,7 +49,8 @@ function change_video(){
 
     //let start_date = getTime("Wed Sep 2 2020 08:10:00 GMT-0500");
     // Fecha para el timer.
-    let start_date = getTime("Wed May 26 2021 09:10:00 GMT-0500");
+    // let start_date = getTime("Wed May 26 2021 09:10:00 GMT-0500");
+    let start_date = getTime("Tue May 25 2021 15:57:00 GMT-0500");
 
     let url = window.location.origin;
 
@@ -61,8 +62,9 @@ function change_video(){
 
     // if( day === 2 && hour === 8 && minutes === 02 && seconds === 00 ){
     // Hora de inicio del video introductorio del evento.
-    if( day === 21 && hour === 18 && minutes === 05 && seconds === 00 ){
-        video.removeAttr('loop');
+    // if( day === 21 && hour === 18 && minutes === 05 && seconds === 00 ){
+    if( day === 25 && hour === 15 && minutes === 57 && seconds === 00 ){
+    video.removeAttr('loop');
         $('#main-video-section').attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorio2021.mp4');
         video.on('ended', function(){
@@ -74,7 +76,8 @@ function change_video(){
 
     //if( day === 2 && hour === 9 && minutes === 00 && seconds === 0){
     //Video para el minuto siguiente al video introductorio.
-    if( day === 21 && hour === 18 && minutes === 07 && seconds === 0){
+    // if( day === 21 && hour === 18 && minutes === 07 && seconds === 0){
+    if( day === 25 && hour === 16 && minutes === 00 && seconds === 0){
         video.removeAttr('controls');
         video.attr('muted', '');
         video.attr('loop', '');
@@ -124,7 +127,8 @@ function loadVideo(){
 
     //if(day === 2 && hour === 8 && (minutes >= 02 && minutes <= 59)){
     //Minutos en q se mantiene el video introductorio del evento.
-    if(day === 21 && hour === 18 && (minutes >= 05 && minutes <= 06)){
+    // if(day === 21 && hour === 18 && (minutes >= 05 && minutes <= 06)){
+    if(day === 25 && hour === 15 && (minutes >= 57 && minutes <= 59)){
         video.removeAttr('loop');
         video.attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorio2021.mp4');

@@ -389,7 +389,7 @@ INSERT INTO `users` (`Name`, `Last_name`, `id`, `Email`, `Tipo`, `company`, `pos
 ('Ana Maria', 'Currea', '', 'diseno.endeavor@gmail.com', 1, '', '', '', '', '', '', '', '', ''),
 ('Nicolas', 'Nieto', '', 'audiovisual@endeavor.org.co', 1, '', '', '', '', '', '', '', '', ''),
 ('Stefany', 'Jaramillo', '', 'stefany.jaramillo@endeavor.org.co', 1, '', '', '', '', '', '', '', '', ''),
-('Ana María', 'Sierra', '', 'ana.sierra@endevor.org.co', 1, '', '', '', '', '', '', '', '', ''),
+('Ana María', 'Sierra', '', 'ana.sierra@endeavor.org.co', 1, '', '', '', '', '', '', '', '', ''),
 ('Johanna', 'Martínez', '', 'jmartinez@cámarabaq.org.co', 1, '', '', '', '', '', '', '', '', ''),
 ('Kandya', 'Obezo', '', 'kobezo@cccartagena.org.co', 1, '', '', '', '', '', '', '', '', ''),
 ('Yina', 'Perazzo', '', 'yperazzo@cccartagena.org.co', 1, '', '', '', '', '', '', '', '', ''),
