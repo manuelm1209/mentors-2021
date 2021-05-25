@@ -152,7 +152,7 @@
                                     }
                                 case 2:
                                     if ($this->third_user_session[0]->area != '0') {
-                                        echo '<p class="event-hour">SESIÓN:<br>3:20 P.M. - 4:40 P.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN:<br>3:20 P.M. - 4:20 P.M.</p>';
                                         echo '<p class="area-event">' . $this->third_user_session[0]->area . '</p>';
                                         echo '<p class="name-event">' . $this->third_user_session[0]->name . '</p>';
                                         echo '<p class="name-event">Contraseña: ' . $this->third_user_session[0]->password . '</p>';
@@ -326,7 +326,7 @@
                         </div>
                     <?php } ?>
                     <div class="col-12" id="first-session-mentor">
-                        <h4 class="text-center">SESIÓN 3:20 P.M. - 4:40 P.M.</h4>
+                        <h4 class="text-center">SESIÓN 3:20 P.M. - 4:20 P.M.</h4>
                     </div>
                     <?php foreach ($this->third_session_mentor as $key => $val) { ?>
                         <div class="col-lg-4 col-md-6 pb-3 h-100">
