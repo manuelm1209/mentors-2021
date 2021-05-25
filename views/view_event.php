@@ -69,7 +69,11 @@
                 $i = 0;
                 $j = 0;
                 foreach ($this->sessions as $session) { ?>
-                    <div class="col-md-4 col-sm-6 pt-1 pb-1">
+                    <!-- Prueba para no mostrar primer cuadro. -->
+                    <!-- <div class="col-md-4 col-sm-6 pt-1 pb-1"> -->
+                    <div class="col-md-4 col-sm-6 pt-1 pb-1"<?php if ($session->area == "0" ) {
+                                echo 'style="display: none;"';
+                                } ?>>
                         <div class="event-card h-100">
                             <?php if ($this->user[0]->type === 3) {
                                 switch ($i) {
@@ -101,10 +105,18 @@
                             ?>
 
 
-                            <p class="area-event"><?php if ($session->area != "0" ) {echo $session->area;} ?></p>
-                            <p class="name-event"><?php if ($session->area != "0" ) {echo $session->name;} ?></p>
-                            <p class="name-event">Contraseña: <?php if ($session->area != "0" ) {echo $session->password;} ?></p>
-                            <a class="button-event" href="<?php if ($session->area != "0" ) {echo $session->link;} ?>" target="_blank">Entrar</a>
+                            <p class="area-event"><?php if ($session->area != "0" ) {
+                                echo $session->area;
+                                } ?></p>
+                            <p class="name-event"><?php if ($session->area != "0" ) {
+                                echo $session->name;
+                                } ?></p>
+                            <p class="name-event">Contraseña: <?php if ($session->area != "0" ) {
+                                echo $session->password;
+                                } ?></p>
+                            <a class="button-event" href="<?php if ($session->area != "0" ) {
+                                echo $session->link;
+                                } ?>" target="_blank">Entrar</a>
                         </div>
                     </div>
             <?php $i++;
