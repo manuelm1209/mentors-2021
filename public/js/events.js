@@ -64,7 +64,7 @@ function change_video(){
     if( day === 21 && hour === 18 && minutes === 05 && seconds === 00 ){
         video.removeAttr('loop');
         $('#main-video-section').attr('controls', '');
-        $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorioDiaDelEventoMentorsDay.mp4');
+        $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorio2021.mp4');
         video.on('ended', function(){
             video.removeAttr('autoplay');
             video.attr('poster', url_s3 + 'images/placeholder_mentors.jpg');
@@ -127,7 +127,7 @@ function loadVideo(){
     if(day === 21 && hour === 18 && (minutes >= 05 && minutes <= 06)){
         video.removeAttr('loop');
         video.attr('controls', '');
-        $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorioDiaDelEventoMentorsDay.mp4');
+        $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorio2021.mp4');
         video.on('ended', function(){
             video.removeAttr('autoplay');
             video.attr('poster', url_s3 + 'images/placeholder_mentors.jpg');
