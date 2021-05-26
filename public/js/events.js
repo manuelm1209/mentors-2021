@@ -61,7 +61,7 @@ function change_video(){
 
     // if( day === 2 && hour === 8 && minutes === 02 && seconds === 00 ){
     // Hora de inicio del video introductorio del evento.
-    if( day === 26 && hour === 09 && minutes === 10 && seconds === 00 ){
+    if( day === 26 && hour === 15 && minutes === 11 && seconds === 00 ){
     video.removeAttr('loop');
         $('#main-video-section').attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorio2021.mp4');
@@ -74,7 +74,7 @@ function change_video(){
 
     //if( day === 2 && hour === 9 && minutes === 00 && seconds === 0){
     //Video para el minuto siguiente al video introductorio.
-    if( day === 26 && hour === 09 && minutes === 21 && seconds === 0){
+    if( day === 26 && hour === 15 && minutes === 21 && seconds === 0){
         video.removeAttr('controls');
         video.attr('muted', '');
         video.attr('loop', '');
@@ -124,7 +124,7 @@ function loadVideo(){
 
     //if(day === 2 && hour === 8 && (minutes >= 02 && minutes <= 59)){
     //Minutos en q se mantiene el video introductorio del evento.
-    if(day === 26 && hour === 09 && (minutes >= 10 && minutes <= 20)){
+    if(day === 26 && hour === 15 && (minutes >= 11 && minutes <= 20)){
         video.removeAttr('loop');
         video.attr('controls', '');
         $('#main-video-section').attr('src', url_s3 + 'videos/VideoIntroductorio2021.mp4');
