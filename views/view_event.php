@@ -78,16 +78,16 @@
                             <?php if ($this->user[0]->type === 3) {
                                 switch ($i) {
                                     case 0:
-                                        echo '<p class="event-hour">SESIÓN 1:<br>8:20 A.M. - 9:20 A.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN:<br>9:20 A.M. - 10:20 A.M.</p>';
                                         break;
                                     case 1:
-                                        echo '<p class="event-hour">SESIÓN 2:<br>9:30 A.M. - 10:30 A.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN:<br>10:30 A.M. - 11:30 A.M.</p>';
                                         break;
                                     case 2:
-                                        echo '<p class="event-hour">SESIÓN 3:<br>10:40 A.M. - 11:40 P.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN:<br>3:20 P.M. - 4:20 P.M.</p>';
                                         break;
                                     case 3:
-                                        echo '<p class="event-hour">SESIÓN 4:<br>10:40 A.M. - 11:40 P.M.</p>';
+                                        echo '<p class="event-hour">SESIÓN:<br>4:30 P.M. - 5:30 P.M.</p>';
                                         break;
                                 }
                             } ?>
