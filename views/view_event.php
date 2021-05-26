@@ -13,7 +13,7 @@
         <div class="row justify-content-center pt-5 pb-3">
             <div class="col text-center">
                 <h2 class="normal-text">¡Ya estás en <span class="green">MENTORS' DAY </span>LIVE!</h2>
-                <p class="normal-text pt-3">Antes de ingresar a tu primera sesión, mira el video que iniciará a las 9:10 a.m.</p>
+                <!-- <p class="normal-text pt-3">Antes de ingresar a tu primera sesión, mira el video que iniciará a las 9:10 a.m.</p> -->
             </div>
         </div>
         <div class="row justify-content-center pb-4 text-center">
