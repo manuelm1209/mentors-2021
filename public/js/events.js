@@ -49,7 +49,7 @@ function change_video(){
 
     //let start_date = getTime("Wed Sep 2 2020 08:10:00 GMT-0500");
     // Fecha para el timer.
-    let start_date = getTime("Wed May 26 2021 09:20:00 GMT-0500");
+    let start_date = getTime("Wed May 26 2021 15:20:00 GMT-0500");
 
     let url = window.location.origin;
 

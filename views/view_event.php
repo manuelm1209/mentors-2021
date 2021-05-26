@@ -18,7 +18,7 @@
         </div>
         <div class="row justify-content-center pb-4 text-center">
             <div class="col-12 pb-3" id="clock-container">
-                <h4 class="title-clock red">EL EVENTO INICIARÁ EN</h4>
+                <h4 class="title-clock red">LA JORNADA P.M. INICIARÁ EN</h4>
                 <ul id="clock-list">
                     <li id="days"></li>
                     <li id="hours"></li>

@@ -76,7 +76,7 @@ INSERT INTO `records` (`email`, `first_session`, `second_session`, `third_sessio
 ('info@inmoleatherbags.com', 2, 7, 24, 27),
 ('mia@aequales.com', 'null', 'null', 21, 28),
 ('labgella@gmail.com', 'null', 'null', 25, 18),
-('fernando@wasi.co', 1, 3, 22, 26),
+('fernando@wasi.co', 1, 13, 22, 26),
 ('rodrigo.castrillon@intelnova.co', 13, 6, 'null', 'null'),
 ('emilianodellcarmine@gmail.com', 1, 8, 'null', 'null'),
 ('nicolasmauricio@gmail.com', 2, 9, 25, 28),
@@ -99,7 +99,7 @@ INSERT INTO `records` (`email`, `first_session`, `second_session`, `third_sessio
 ('cvelez@mappex.com.co', 'null', 'null', 29, 25),
 ('luisbernalb@lya-electronic.com', 10, 8, 'null', 'null'),
 ('eortegadelrio@agenciapopuli.com', 4, 13, 27, 28),
-('dircomercial@maderformas.net', 13, 3, 'null', 'null'),
+('dircomercial@maderformas.net', 13, 11, 'null', 'null'),
 ('mateofh@gmail.com', 1, 5, 'null', 'null'),
 ('comercial@ubiquom.com', 'null', 'null', 27, 26),
 ('jenifer.cardenas@ubiquom.com', 12, 10, 'null', 'null'),
@@ -120,7 +120,7 @@ INSERT INTO `records` (`email`, `first_session`, `second_session`, `third_sessio
 ('camilo.orozco@viliv.com.co', 'null', 'null', 17, 16),
 ('luchovivesg@hotmail.com', 11, 10, 20, 25),
 ('ivanecheverrigomez@gmail.com', 5, 6, 16, 17),
-('coordinadorventas@agrofacil.co', 13, 3, 'null', 'null'),
+('coordinadorventas@agrofacil.co', 13, 1, 'null', 'null'),
 ('jisaza@fisapay.com', 2, 10, 'null', 'null'),
 ('paolobejarano@hotmail.com', 12, 14, 25, 29),
 ('davidacla@me.com', 9, 11, 21, 29),
@@ -243,7 +243,7 @@ INSERT INTO `sessions` (`id`, `area`, `name`, `link`, `password`) VALUES
 (26, 'Cerrada', 'Cerrada', 'https://link26', 'pass26'),
 (27, 'Ventas', 'Compensación a mi fuerza comercial', 'https://zoom.us/j/98207885042?pwd=RXpCRk5Zd2l3QVRLSDk5OTBZbkp6QT09', '960095'),
 (28, 'Talento', '¿Cómo construir la cultura de mi empresa durante el trabajo remoto?', 'https://zoom.us/j/92879101007?pwd=Z1lxZHBGelBmUWpMZGpwRm1aUWlKQT09', '637236'),
-(29, 'Talento', '¿Cómo crear un equipo de alto desempeño?', 'https://zoom.us/j/92783496397?pwd=blR5VXp1T2Rud3JvMTUzVFZTcXFBdz09', '59791');
+(29, 'Talento', '¿Cómo crear un equipo de alto desempeño?', 'https://zoom.us/j/92783496397?pwd=blR5VXp1T2Rud3JvMTUzVFZTcXFBdz09', '059791');
 -- --------------------------------------------------------
 
 --
