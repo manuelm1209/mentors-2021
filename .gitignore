@@ -4,6 +4,6 @@
 /public/BD/records
 /public/BD/records_copy
 /.vscode/
-/.prettierignore/
-/public/BD/endeavor_mentors_live_db.sql/
-/public/BD/mentors_2021_db.sql/
+/.prettierignore
+/public/BD/endeavor_mentors_live_db.sql
+/public/BD/mentors_2021_db.sql
