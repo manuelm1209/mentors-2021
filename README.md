@@ -26,3 +26,6 @@ mentors_live
 - users
 - user_type
 - nps
+
+![Screen Shot 2021-05-27 at 16 55 23](https://user-images.githubusercontent.com/55123690/119902048-561a2980-bf0c-11eb-9c11-4ebba7180c88.png)
+![Screen Shot 2021-05-27 at 16 54 47](https://user-images.githubusercontent.com/55123690/119901997-413d9600-bf0c-11eb-91e8-71fc30a66e69.png)
