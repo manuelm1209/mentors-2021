@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `endeavor_mentors_live`
+-- Base de datos: `mentors_live`
 --
 
 -- --------------------------------------------------------
