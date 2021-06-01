@@ -1,7 +1,5 @@
 # Mentors Live
 
-**Fork From: @jmalagonn**
-
 Código para evento MENTORS DAY LIVE.
 
 Página de inicio con un formulario para validar correo de distinto tipo. (Attendee, mentor, staff y administrador).
